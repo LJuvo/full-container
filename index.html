@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <style>
+            html,body{
+                background-color: rgb(0, 0, 0);
+            }
+            h1 {
+                color: #fff;
+                font-size: 48px;
+                text-align: center;
+            }
+            p {
+                color: #00a0ff;
+                font-size: 28px;
+                text-align: center;
+            }
+            .screen-video {
+                margin: 0 auto;
+                text-align: center;
+                filter: hue-rotate(203deg) contrast(100%) opacity(100%) saturate(123%) brightness(128%);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="screenContainer">
+            <h1>数据可视化呈现</h1>
+            <p>调整浏览器宽度即可查看效果</p>
+            <div class="screen-video">
+                <video muted autoplay loop width="1541" height="848" style="object-fit: fill">
+                    <source src="http://datav.oss-cn-hangzhou.aliyuncs.com/upload/videos/循环.mp4">
+                </video>
+            </div>
+        </div>
+    </body>
+    <script src="../js/fullContainer.js"></script>
+<script>
+    new FullContainer("screenContainer");
+</script>
+</html>
